@@ -23,7 +23,8 @@ public class InvoiceItem  {
     @Column(name = "product_id")
     private Long productId;
 
-
+    //Especifica que la propiedad o el campo no es persistente, es decir que no se guarda en la base de datos.
+    // Se utiliza para anotar una propiedad o campo de una clase de entidad, superclase mapeada o clase incrustada.
     @Transient
     private Double subTotal;
 

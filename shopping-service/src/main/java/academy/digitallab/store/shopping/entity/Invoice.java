@@ -50,6 +50,7 @@ public class Invoice {
         items = new ArrayList<>();
     }
 
+    //Se esta registrando la fecha de creación de neustra factura que se registe automaticamente antes de insertar en nustra base de datos y esto lo logramos con la anotación @PrePersist
     @PrePersist
     public void prePersist() {
         this.createAt = new Date();
